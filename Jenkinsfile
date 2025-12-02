@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/zaborowskia1-stack/springboot-mysql-demo.git'
+                git branch: 'main', url: 'https://github.com/zaborowskia1-stack/springboot-mysql-demo.git'
             }
         }
 
